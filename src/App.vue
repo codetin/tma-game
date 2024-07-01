@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import WebApp from '@twa-dev/sdk'
+import {ref} from 'vue'
+
+let count = ref(0)
+function call(){
+  WebApp.showAlert(`Hello World! Current count is ${count}`)
+}
 </script>
 
 <template>
@@ -9,7 +16,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
+      {{ count }}
+      <button @click="call">
+            显示警告
+        </button>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
