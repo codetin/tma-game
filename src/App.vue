@@ -15,6 +15,7 @@ function invite(){
 }
 
 console.log(JSON.stringify(WebApp.initDataUnsafe))
+console.log("-----------------")
 console.log(WebApp.initData)
 </script>
 
