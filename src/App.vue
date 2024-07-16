@@ -14,7 +14,7 @@ function invite(){
   WebApp.openLink('https://t.me/share/url?text=%F0%9F%9A%80%F0%9F%9A%80%F0%9F%9A%80%E5%BC%80%E5%A7%8B%E6%B5%8B%E8%AF%95%E6%88%91%E7%9A%84%E9%93%BE%E6%8E%A5%E5%90%A7%0A&url=https://t.me/teletest3721_bot/game?startapp=3JRL8T')
 }
 
-console.log(WebApp.initDataUnsafe)
+console.log(JSON.stringify(WebApp.initDataUnsafe))
 console.log(WebApp.initData)
 </script>
 
