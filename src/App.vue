@@ -19,6 +19,7 @@ console.log("-----------------")
 console.log(WebApp.initData)
 console.log("-----------------")
 console.log(WebApp.initDataUnsafe.start_param?WebApp.initDataUnsafe.start_param:"")
+console.log(decodeURIComponent(WebApp.initDataUnsafe.start_param))
 </script>
 
 <template>
