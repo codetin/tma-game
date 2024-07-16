@@ -18,7 +18,7 @@ console.log(JSON.stringify(WebApp.initDataUnsafe))
 console.log("-----------------")
 console.log(WebApp.initData)
 console.log("-----------------")
-console.log(WebApp.initData.start_param?WebApp.initData.start_param:"")
+console.log(WebApp.initDataUnsafe.start_param?WebApp.initDataUnsafe.start_param:"")
 </script>
 
 <template>
