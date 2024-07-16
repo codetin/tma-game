@@ -18,7 +18,7 @@ console.log(JSON.stringify(WebApp.initDataUnsafe))
 console.log("-----------------")
 console.log(WebApp.initData)
 console.log("-----------------")
-console.log(WebApp.start_param?WebApp.start_param.gameId:"")
+console.log(WebApp.initData.start_param?WebApp.initData.start_param:"")
 </script>
 
 <template>
