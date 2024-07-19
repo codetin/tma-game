@@ -29,12 +29,17 @@ try {
 			"Content-Type": "application/json",
 		},
 	}).then((res) => {
-		const jsonResponse = await res.json(); // 等待解析 JSON
+		return res.json();
+	}).then((jsonResponse) => {
+		console.log('Response Data:', jsonResponse);
 		const uid = jsonResponse.data.uid; // 访问 data.uid
 		console.log(uid); // 打印 data
-		console.log(jsonResponse.data); // 打印 data
+		console.log(jsonResponse.data); // 打印 data });
+	}).catch((error) => {
+		console.log(error);
 	});
-} catch (error) {
+}
+catch (error) {
 	console.log(error);
 }
 
