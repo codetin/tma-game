@@ -59,7 +59,7 @@ function init() {
 		<img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
 		<div class="wrapper">
-			<HelloWorld msg="You did it!" />
+			<HelloWorld msg="1" />
 			{{ count }}
 			<div style="font-size: xx-large;">1</div>
 			<button @click="call">分享链接</button>
