@@ -61,6 +61,7 @@ function init() {
 		<div class="wrapper">
 			<HelloWorld msg="You did it!" />
 			{{ count }}
+			<div style="font-size: xx-large;">1</div>
 			<button @click="call">分享链接</button>
 			<button @click="invite">邀请好友</button>
 		</div>
