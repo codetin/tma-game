@@ -57,6 +57,7 @@ function init() {
 	if (!WebApp.initDataUnsafe.user) {
 		return
 	}
+}
 </script>
 
 <template>
