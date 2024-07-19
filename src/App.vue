@@ -29,8 +29,10 @@ try {
 			"Content-Type": "application/json",
 		},
 	}).then((res) => {
-		Global._userid = res.json().data.uid;
-		console.log(res.json().data);
+		const jsonResponse = await res.json(); // 等待解析 JSON
+		const uid = jsonResponse.data.uid; // 访问 data.uid
+		console.log(uid); // 打印 data
+		console.log(jsonResponse.data); // 打印 data
 	});
 } catch (error) {
 	console.log(error);
