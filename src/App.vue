@@ -19,7 +19,7 @@ console.log("-----------------")
 console.log(WebApp.initData)
 console.log("-----------------")
 console.log(WebApp.initDataUnsafe.start_param ? WebApp.initDataUnsafe.start_param : "")
-console.log(atob(WebApp.initDataUnsafe.start_param))
+// console.log(atob(WebApp.initDataUnsafe.start_param))
 const init_data = WebApp.initData as string;
 try {
 	let url = `http://localhost:3000/login?initdata=${init_data}`;
