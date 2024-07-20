@@ -22,7 +22,8 @@ console.log(WebApp.initDataUnsafe.start_param ? WebApp.initDataUnsafe.start_para
 // console.log(atob(WebApp.initDataUnsafe.start_param))
 const init_data = WebApp.initData as string;
 try {
-	let url = `https://api.metalbros.io/login?initdata=${init_data}`;
+	const encode_data = btoa(init_data);
+	let url = `https://api.metalbros.io/login?initdata=${encode_data}`;
 	fetch(url, {
 		method: "GET",
 		headers: {
