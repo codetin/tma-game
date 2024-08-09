@@ -21,11 +21,11 @@ tonConnectUI.uiOptions = {
 // const walletsList = await tonConnectUI.getWallets();
 await tonConnectUI.openModal();
 const currentWallet = tonConnectUI.wallet;
-const currentWalletInfo = tonConnectUI.walletInfo;
+// const currentWalletInfo = tonConnectUI.walletInfo();
 const currentAccount = tonConnectUI.account;
 const currentIsConnectedStatus = tonConnectUI.connected;
 console.log(currentWallet);
-console.log(currentWalletInfo);
+// console.log(currentWalletInfo);
 console.log(currentAccount);
 console.log(currentIsConnectedStatus);
 
